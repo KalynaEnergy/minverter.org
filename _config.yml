@@ -1,0 +1,9 @@
+# Site settings
+title: Minverter Project
+author:
+  name: Doug Ridgway
+  email: doug@kalyna.energy
+description: "World's best open source microinverter (project)"
+
+# Build settings
+remote_theme: jekyll/minima
