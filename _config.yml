@@ -5,7 +5,10 @@ author:
   email: doug@kalyna.energy
 description: "World's best open source microinverter (project)"
 
+google_analytics: G-LT3871TRQG
+show_excerpts: true
+
+
 # Build settings
 remote_theme: jekyll/minima
 include: ["_includes"]
-
