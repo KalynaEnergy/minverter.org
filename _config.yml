@@ -7,3 +7,5 @@ description: "World's best open source microinverter (project)"
 
 # Build settings
 remote_theme: jekyll/minima
+include: ["_includes"]
+
