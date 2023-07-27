@@ -1,3 +1,10 @@
+---
+layout: post
+title: PV benefit
+tags: 
+categories: 
+---
+
 # The right metric for where to install solar
 
 The world has a limited capacity for producing new PV modules. Where's the best place to put them? 
