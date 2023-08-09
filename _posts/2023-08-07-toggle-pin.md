@@ -124,5 +124,24 @@ I'm not entirely certain what parts of this are strictly required. But it does s
 And, stuffed into the inverter circuit, it behaves about the same as the Arduino version. (Slighly different duty cycle.)
 ![scope trace](/assets/scope-nrf-20230807.jpg)
 
+Update:
+
+The overlay file above has lots of reference to LEDs even though the pin I want to toggle, and direct reference to GPIO0.27 even though there's an Arduino Nano header defined as part of the board in Zephyr. Here's a cleaned up version. It still uses gpio-leds as the compatible property, which is basically serving as a generic output binding. The discussion [here](https://devzone.nordicsemi.com/f/nordic-q-a/87298/proper-use-of-dts-files-to-describe-gpios-in-zephyr) is more or less in accordance.
+
+```
+/{
+	customgpios {
+		compatible = "gpio-leds";
+		customgpio: customgpio_0 {
+			gpios = <&arduino_nano_header 9 GPIO_ACTIVE_HIGH>;
+		};
+	
+	};
+	aliases {
+		mycustomgpio = &customgpio;
+	};
+};
+```
+
 
 
