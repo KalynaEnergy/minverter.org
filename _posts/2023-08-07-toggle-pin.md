@@ -25,7 +25,9 @@ void loop() {
 It sets up a single pin, labelled on the board as D9, which [Arduino's docs](https://docs.arduino.cc/hardware/nano-33-ble-sense-rev2) note is connected to P0.27, as a digital output. Then, in the main loop, it writes low and high values to the pin. On my Arduino, a Nano 33 BLE Sense, high is about 3.3 V and low is near zero.
 
 We can use this to control a half-bridge, and get a kind of inverter.
+
 ![inverter trace](/assets/scope-20230807.jpg)
+
 It works, and wasn't too hard to get going.
 
 Due to reasons, the Arduino universe doesn't really give access to all the features of the microcontroller that I think it'd be useful to have. This board uses the nRF52840 from Nordic Semiconductor, and Nordic provides their own stack, the [NRF Connect SDK](https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK), based on the [Zephyr RTOS](https://zephyrproject.org/). This is a complex, full featured system. But for any of it to be any use, I figured that I'd need to be able to toggle a pin.
@@ -122,6 +124,7 @@ This won't compile, obviously, without something else, because the new alias myc
 I'm not entirely certain what parts of this are strictly required. But it does set up a node customgpio which is the 27th pin of the processor's GPIO0.
 
 And, stuffed into the [inverter circuit](/2023/08/09/hb-inverter.html), it behaves about the same as the Arduino version. (Slighly different duty cycle.)
+
 ![scope trace](/assets/scope-nrf-20230807.jpg)
 
 Update:
