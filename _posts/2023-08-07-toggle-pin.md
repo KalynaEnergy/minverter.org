@@ -121,7 +121,7 @@ This won't compile, obviously, without something else, because the new alias myc
 
 I'm not entirely certain what parts of this are strictly required. But it does set up a node customgpio which is the 27th pin of the processor's GPIO0.
 
-And, stuffed into the inverter circuit, it behaves about the same as the Arduino version. (Slighly different duty cycle.)
+And, stuffed into the [inverter circuit](/2023/08/09/hb-inverter.html), it behaves about the same as the Arduino version. (Slighly different duty cycle.)
 ![scope trace](/assets/scope-nrf-20230807.jpg)
 
 Update:
