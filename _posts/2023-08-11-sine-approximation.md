@@ -3,6 +3,7 @@ layout: post
 title: Approximating a sine wave without sin()
 tags: 
 categories: 
+usemathjax: true
 ---
 
 If we want to make a sinusoidal signal, we need a sine wave. sin() is part of the standard C math library, but unfortunately this is not trivially available on all microcontrollers. I went looking for a suitable approximation, and there is a truly ancient one: [Bhāskara I's sine approximation formula](https://en.wikipedia.org/wiki/Bh%C4%81skara_I%27s_sine_approximation_formula), dated to 7th century CE. For phase angle x in turns (1 turn = 2 π radians = one full cycle),  0 ≤ x ≤ 1/2, it is
