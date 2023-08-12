@@ -12,4 +12,3 @@ show_excerpts: true
 # Build settings
 remote_theme: jekyll/minima
 include: ["_includes"]
-markdown: kramdown
