@@ -41,7 +41,7 @@ Getting the compiled program flashed onto the board is not entirely trivial, tho
 
 ```
 The COM port will depend on your board, and won't be the same port it uses normally.
-The bossac path can be determined by setting your Arduino IDE preferences to verbose output during compile and upload then compiling and running a sketch. This is all a little awkward but it does work.
+The bossac path can be determined by setting your Arduino IDE preferences to verbose output during compile and upload then compiling and running a sketch. This is all a little awkward but it does work. (Procedure taken from [Zephyr docs for Arduino Nano 33 BLE](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/boards/arm/arduino_nano_33_ble/doc/index.html).)
 
 Next up is to modify blinky to also toggle one of the external pins. This should be trivial, like the Arduino example above. It is more complex in the nRF world. The principal issue is [devicetree](https://docs.zephyrproject.org/latest/build/dts/index.html) which I think is supposed to allow Zephyr to support any hardware with static configuration in a very general fashion. Nordic does have a number of examples, but they all deal with Nordic boards and do not require modifying the devicetree. I eventually found success from [here](https://devzone.nordicsemi.com/f/nordic-q-a/101817/gpio-overlays). [Full code](https://gist.github.com/dridgway/c9029a3391797e1d297075ef69f54dd1). 
 
