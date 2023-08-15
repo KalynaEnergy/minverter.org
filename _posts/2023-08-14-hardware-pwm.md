@@ -8,7 +8,7 @@ usemathjax: true
 
 Essentially every [switched mode power converter](https://en.wikipedia.org/wiki/Switched-mode_power_supply) uses [pulse width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation) somewhere, plus large quantities of other applications, so it is not surprising that control hardware frequently supports PWM. This means we don't need to be manually toggling pins under software control, like [we did earlier]({% post_url 2023-08-07-toggle-pin %}), which clutters the code, makes the CPU unavailable for other uses, and potentially doesn't allow the same performance as the hardware. The nRF52840 has a [full featured PWM peripheral](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52840%2Fpwm.html&cp=5_0_0_5_16), but how do we use it?
 
-Starting from the [PWM Blinky](https://docs.zephyrproject.org/latest/samples/basic/blinky_pwm/README.html) sample, we can write C code as follows:
+Starting from the [PWM Blinky](https://docs.zephyrproject.org/latest/samples/basic/blinky_pwm/README.html) sample, we can write C code using the [Zephyr PWM API](https://docs.zephyrproject.org/apidoc/latest/group__pwm__interface.html) as follows:
 
 
 ```
@@ -92,7 +92,7 @@ int main(void)
 }
 ```
 
-I've put a sine approximation in there, and assume the existence of the mycustomgpwm alias for the external pin I want to control. To set that up, we have to go back to the devicetree. There are two things we need to do: first define a node for our PWM
+I've put a sine approximation in there, and assume the existence of the mycustomgpwm alias for the external pin I want to control. To set that up, we have to go back to the devicetree. There are two things we need to do: first define a node for our PWM pin:
 
 ```
 /{
