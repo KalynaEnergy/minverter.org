@@ -5,7 +5,7 @@ tags:
 categories: 
 --
 
-To be a utilty interactive inverter, the system will need a few things, here listed without worrying about overlaps and hierarchies:
+To be a utilty interactive inverter, the system will need a number of things, here listed without worrying about overlaps and hierarchies:
   * power stage
   * boost stage
   * line filter
@@ -25,3 +25,4 @@ To be a utilty interactive inverter, the system will need a few things, here lis
   * indicator lights for development and troubleshooting
   * console connection for development
   * independent control loops for various subsystems
+  * hardware PWM of wavetable
