@@ -92,7 +92,7 @@ int main(void)
 }
 ```
 
-I've put a sine approximation in there, and assume the existence of the mycustomgpwm alias for the external pin I want to control. To set that up, we have to go back to the devicetree. There are two things we need to do: first define a node for our PWM pin:
+I've put a sine approximation in there, and assume the existence of the mycustompwm alias for the external pin I want to control. To set that up, we have to go back to the devicetree. There are two things we need to do: first define a node for our PWM pin:
 
 ```
 /{
@@ -139,4 +139,4 @@ The P0.24, P0.16, and P0.6 pins are wired to the red, green, and blue LEDs on th
 
 ![scope image](/assets/spwm1.jpg)
 
-With this all turned on, we can see the output pin making step changes in output level. The frequencies aren't quite right, but it looks fine and we can fix that later.
+With this all turned on, we can see the output pin making step changes in output level. The frequency isn't quite right (sine wave period is ~300 ms, ie ~3.3 Hz, but the code asked for 10 Hz), but it looks like a sine modulated PWM and we can fix the frequency later.
