@@ -12,7 +12,9 @@ To be a utilty interactive inverter, the system will need a few things, here lis
   * voltage and current measurement of input
   * voltage and current measurement of output
   * measurement of other levels as needed
+  * temperature monitoring
   * frequency measurement
+  * generate on board voltages for powering control
   * monitoring and control suitable for application
   * coordination with other units?
   * MPPT for PV input
