@@ -5,7 +5,7 @@ tags:
 categories: 
 --
 
-To be a utilty interactive inverter, the system will need a number of things, here listed without worrying about overlaps and hierarchies:
+A utilty interactive inverter will need a number of features. Here listed without worrying about overlaps and hierarchies:
   * power stage
   * boost stage
   * line filter
