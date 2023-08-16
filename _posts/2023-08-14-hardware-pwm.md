@@ -136,6 +136,7 @@ The P0.24, P0.16, and P0.6 pins are wired to the red, green, and blue LEDs on th
 	};
 };
 ```
+**Update**: The [nRF Connect Fundamentals SDK course](https://academy.nordicsemi.com/courses/nrf-connect-sdk-fundamentals/lessons/lesson-3-elements-of-an-nrf-connect-sdk-application/topic/configuration-files/) says you should also change the pin configuration for the sleep state, but I didn't here, and it seemed to work anyway. It doesn't really make sense to have pin assignments change based on processor state, so it'd be a good idea.
 
 ![scope image](/assets/spwm1.jpg)
 
