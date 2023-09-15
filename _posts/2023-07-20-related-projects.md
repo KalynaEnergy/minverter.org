@@ -19,5 +19,5 @@ categories:
 
 ## Reference designs from vendors
 * [PMP9461](https://www.ti.com/tool/PMP9461) TI reference design for isolated 165W inverter, with schematics, BOM, layouts, detailed technical docs. Others from TI: [1](https://www.ti.com/tool/TMDSHVMPPTKIT), [2](https://www.ti.com/tool/TMDSHVMPPTKIT)
-* [3.5 kW inverter design](https://www.transphormusa.com/en/evaluation-kit/tdinv3500p100-kit/) from [Transphorm](http://transphormusa.com)
+* [3.5 kW inverter design](https://www.transphormusa.com/en/evaluation-kit/tdinv3500p100-kit/) from [Transphorm](http://transphormusa.com). FB, C2000 control, Si823x gate drivers,  current and voltage sense on output. Now discontinued, [new 3 kW one](https://www.transphormusa.com/en/evaluation-kit/tdinv3000w050b-kit/) uses dsPIC33 controller.
 
