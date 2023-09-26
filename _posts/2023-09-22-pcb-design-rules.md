@@ -14,6 +14,10 @@ For this project, I'm hoping to use an aluminum core PCB. Reasoning: mechanicall
 
 Here's the PCB from a low cost LED bulb. This device is part of the inspiration for the whole project. It's clearly extensively optimized for cost (just a few parts) but can interact safely and efficiently with line power. The entire bulb retails for a couple of bucks. This is a load, not a source, and lower current/power than we'll be aiming for, but still, philosophically, perhaps a useful model design. This is a single sided aluminum PCB, 1.0 mm thick, with a single ~1 oz copper layer. It dissipates perhaps 10W total.
 
+![circuit board](/assets/tiny36.jpg)
+
+This is a small DC-DC converter we built for a client, also done as a single layer aluminum PCB.
+
 One approach is to look at what vendors quote as easy and cheap, vs expensive. The idea is that whatever is cheap and fast is likely to be technically and economincally feasible, reasonable compromise, and popular among people doing similar things. I went onto [PCBWay](https://www.pcbway.com/)'s pricing calculator, and found the following set of parameters are cheap and fast:
 
   * 1.6 mm, 1.5 W/(m K) aluminum core
