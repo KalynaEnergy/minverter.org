@@ -93,7 +93,16 @@ A table may be useful:
 
 This doesn't quite cover all possibilities, nor is it entirely consistent, but it's a start.
 
-All right, so how could this work? Well, consider toggling S3 on and off. From the point of view of L1, this switches back and forth between Loop 2 and Loop 3, building charge onto the cap. 
+All right, so how could this work? Well, consider toggling S3 on and off. From the point of view of L1, this switches back and forth between Loop 2 and Loop 3, building charge onto the cap. There's no limit on how much charge can be built up, so the cap can have whatever voltage you want, until you stop toggling. Here's the cycle:
+
+![loop2](/assets/w21/w21loop2.png)
+![loop3](/assets/w21/w21loop3.png)
+
+This is a little funny compared to a more usual boost:
+
+![boost current states](/assets/boost_states.png)
+
+The standard circuit switches the inductor to ground to build current, then opens to force the current up through the diode and load. In our circuit, we have not two but three switches in series (counting the diode as a switch), with two intermediate nodes. The power is connected across the top and the lower intermediate node, and when the switch S3 opens current is forced onto the capacitor bringing the lower rail below the power ground. We need a negative rail, so this is useful. 
 
 
 
