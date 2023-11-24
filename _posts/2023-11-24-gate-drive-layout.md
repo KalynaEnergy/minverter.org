@@ -6,7 +6,7 @@ categories:
 usemathjax: true
 ---
 
-The actual gate drive is a litte more complicated than in my [test layout]({%post_url 2023-09-25-single-layer-test }). I'm using the circuit from [AN90041](https://assets.nexperia.com/documents/application-note/AN90041.pdf), which looks like this:
+The actual gate drive is a litte more complicated than in my [test layout]({%post_url 2023-09-25-single-layer-test %}). I'm using the circuit from [AN90041](https://assets.nexperia.com/documents/application-note/AN90041.pdf), which looks like this:
 
 ![gate drive schematic](/assets/gate-drive-layout/nxp-gate-drive-sch.png)
 
