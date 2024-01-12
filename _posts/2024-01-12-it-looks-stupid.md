@@ -13,4 +13,4 @@ Here is a test assembly. As you can see, the power connector terminal block has 
 
 ![bottom holes](/assets/2024-01-12/bottom_holes.jpg)
 
-There are no pads for the leads to be soldered to. They were present in the footprint for the component, but were the only features on the bottom copper. I thought they weren't needed, and was trying to design a single-sided board. So I deleted the bottom copper gerber, and ordered a single sided board. Now, I guess I'm going to get a board with a terminal block on the bottom. I guess that can work too, but I feel stupid. I guess that's how you learn things.
+There are no pads for the leads to be soldered to. They were present in the footprint for the component, but were the only features on the bottom copper. I thought they weren't needed, and was trying to design a single-sided board. So I deleted the bottom copper gerber, and ordered a single sided board. Now, I guess I'm going to get a board with a terminal block on the bottom. I guess that can work too, but I feel stupid. Screwing up is how we learn things, though.
