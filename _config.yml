@@ -7,7 +7,7 @@ description: "A low-cost open source microinverter (project)"
 
 google_analytics: G-LT3871TRQG
 show_excerpts: true
-excerpt_ separator: <!--more-->
+excerpt_separator: <!--more-->
 
 
 # Build settings
