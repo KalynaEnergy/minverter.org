@@ -8,7 +8,7 @@ usemathjax: true
 
 Awhile back I came across the following inverter topology:
 
-![schematic](/assets/w21/w21-orig.png)
+![schematic](/assets/w21/w21-orig.png)<!--more-->
 
 The authors [claim](https://www.mdpi.com/2079-9292/10/14/1716) that it supports voltage boost, bidirectional output, common ground (avoiding leakage current) using only four switches. Given the purpose and philosophy of this project, you can see why this would be interesting to me. I have some familiarity with the literature ([Khan 2020](https://ieeexplore.ieee.org/abstract/document/8684241) is a decent review), but this topology looks new to me. It's a little surprising to see new topologies, especially simple ones, appearing now. Also, parts of the circuit make no sense to me, I couldn't make much sense of the text, details of the simulations and experiments seem thin, and (although I shouldn't really look at this) the authors' institution and the journal ranking are modest at best. So, I'm skeptical. Still, as an exercise in circuit analysis, I can try to prove that this circuit couldn't do what it claims to.
 

@@ -5,7 +5,7 @@ tags:
 categories: 
 ---
 
-It'll be hard to do anything without the capability of making useful schematics and board layouts. I'm using [Fusion 360](https://www.autodesk.ca/en/products/fusion-360/overview), a reasonbly nice commercial CAD system, the electronics part of which grew out of Eagle. It's been awhile, and they are constantly updating and changing things, so I figured I'd go through a [tutorial](https://www.youtube.com/playlist?list=PLmA_xUT-8UlL80Xm8Gxz98YNum3I9GInr) while working up a simple board. I picked building a half bridge driver board for the [Nexperia GAN190-650FBE](https://assets.nexperia.com/documents/data-sheet/GAN190-650FBE.pdf) GaN transistor, because these are new and interesting devices for which dev boards are not available. 
+It'll be hard to do anything without the capability of making useful schematics and board layouts. I'm using [Fusion 360](https://www.autodesk.ca/en/products/fusion-360/overview), a reasonbly nice commercial CAD system, the electronics part of which grew out of Eagle. It's been awhile, and they are constantly updating and changing things, so I figured I'd go through a [tutorial](https://www.youtube.com/playlist?list=PLmA_xUT-8UlL80Xm8Gxz98YNum3I9GInr) while working up a simple board. I picked building a half bridge driver board for the [Nexperia GAN190-650FBE](https://assets.nexperia.com/documents/data-sheet/GAN190-650FBE.pdf) GaN transistor, because these are new and interesting devices for which dev boards are not available. <!--more-->
 
 The bill of materials isn't too complicated. Here is what I'll need:
   * GAN190-650FBE (x2)

@@ -9,7 +9,7 @@ usemathjax: true
 ![top](/assets/2024-01-12/top.jpg)
 ![bottom](/assets/2024-01-12/bottom.jpg)
 
-Here is a test assembly. As you can see, the power connector terminal block has been placed on the bottom. That's not [what I intended]({% link _posts/2023-12-18-power-connector.md %}). However, it can't be soldered onto the top side. Here is a detail of the bottom side:
+Here is a test assembly. <!--more-->As you can see, the power connector terminal block has been placed on the bottom. That's not [what I intended]({% link _posts/2023-12-18-power-connector.md %}). However, it can't be soldered onto the top side. Here is a detail of the bottom side:
 
 ![bottom holes](/assets/2024-01-12/bottom_holes.jpg)
 

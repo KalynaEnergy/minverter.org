@@ -5,7 +5,7 @@ tags:
 categories: 
 ---
 
-Suppose we want to control something, with a microcontroller. We need to create some type of output. Microcontrollers are set up so that you can use their pins for general purpose I/O. Here's [code](https://gist.github.com/dridgway/c9108568d1858f7033dee75541bd6a14) which does that in the Arduino universe.
+Suppose we want to control something, with a microcontroller. We need to create some type of output. Microcontrollers are set up so that you can use their pins for general purpose I/O. <!--more-->Here's [code](https://gist.github.com/dridgway/c9108568d1858f7033dee75541bd6a14) which does that in the Arduino universe.
 
 ```
 int togglePin = D9;

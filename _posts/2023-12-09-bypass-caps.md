@@ -8,7 +8,7 @@ usemathjax: true
 
 ![block diagram](/assets/bypass/epc90121_blockdiagram.png)
 
-Here's the [EPC90121](https://epc-co.com/epc/products/evaluation-boards/epc90121) block diagram, showing onboard power bypass capacitors. These are important, because you don't want inductance in the power loop. It can lead to ringing, increasing switching losses, give spikes that damage components, etc. Some is unavoidable, but you'd like to reduce it as low as possible.
+Here's the [EPC90121](https://epc-co.com/epc/products/evaluation-boards/epc90121) block diagram, showing onboard power bypass capacitors. <!--more-->These are important, because you don't want inductance in the power loop. It can lead to ringing, increasing switching losses, give spikes that damage components, etc. Some is unavoidable, but you'd like to reduce it as low as possible.
 
 ![schematic](/assets/bypass/epc90121_bypasscaps.png)
 
