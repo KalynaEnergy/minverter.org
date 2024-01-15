@@ -8,7 +8,7 @@ usemathjax: true
 
 The actual gate drive is a litte more complicated than in my [test layout]({%post_url 2023-09-25-single-layer-test-layout %}). I'm using the circuit from [AN90041](https://assets.nexperia.com/documents/application-note/AN90041.pdf), which looks like this:
 
-![gate drive schematic](/assets/gate-drive-layout/nxp-gate-drive-sch.png)
+![gate drive schematic](/assets/gate-drive-layout/nxp-gate-drive-sch.png)<!--more-->
 
 The crossing over of traces works about the same as in the test layout, though. Here's one version of the high side drive, with a purple scribble showing the current path during the turn on transient:
 

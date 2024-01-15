@@ -6,7 +6,7 @@ categories:
 usemathjax: true
 ---
 
-Now that we've [tried out the onboard ADC]({% post_url 2023-08-21-adc %}), we need to talk about how to make it useful, ie how exactly to connect the signals of interest to the measurement input. We can't just tie it directly, we'll want to deal with signals up to hundreds of volts, and the analog input pins can't take anything outside of 0 to Vdd=3.3V without frying. There are several cases to cover.
+Now that we've [tried out the onboard ADC]({% post_url 2023-08-21-adc %}), we need to talk about how to make it useful, ie how exactly to connect the signals of interest to the measurement input. We can't just tie it directly, we'll want to deal with signals up to hundreds of volts, and the analog input pins can't take anything outside of 0 to Vdd=3.3V without frying. <!--more-->There are several cases to cover.
 
 * Unipolar signal, low voltage
 

@@ -8,7 +8,7 @@ usemathjax: true
 
 A reasonable question after picking a whole bunch of appealing design rules is whether you've argued yourself into an unfeasible position. Single layer is a strong constraint. I note that the Nexperia sample PCB is certainly not single layer, nor is the sample layout in the NCP51530 data sheet. Single layer layouts can be a little complex, global geometry optimization problems. However, you have lots of components which can kind of act like jumpers to put a trace under, and flexibility as to where you put connectors, etc. You can add more zero resistance resistors if you need more jumpers, too. We also need to meet voltage clearance constraints, plus all the other requirements and recommendations for the circuit. I figured it'd be a good idea to try a test layout of a simplified version just to see if the rules were already too restrictive.
 
-![circuit](/assets/hb_testlayout_sch.png)
+![circuit](/assets/hb_testlayout_sch.png)<!--more-->
 
 For a circuit, I simplified the gate drive to a single 0805 gate resistor, so I'd have one jumper to work with. The bootstrap and decouplng are I think reasonable. For power input and output, I just have 3 separated mounting holes. Low voltage inputs are collected together.
 
