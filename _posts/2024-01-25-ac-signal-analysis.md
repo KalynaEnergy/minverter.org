@@ -7,7 +7,7 @@ usemathjax: true
 ---
 
 With the ability to [take data]({% link _posts/2023-08-21-adc.md %}) in hand, we need the capability of analyzing it, and determine both AC and DC characteristics of the signals. 
-<!-- more -->
+<!--more-->
 First, let's discuss the circuit and hardware configuration. The [front end voltage divider]({% link _posts/2023-08-22-adc-frontend.md %}) gives us a gain of 2*6.8k/820k and shifts the signal to the middle of the range, giving us a nominal input range of +-398 V based on 3.3 V VDD. We have a big input impedance, so we need a long averaging time. The [maximum TACQ selectable](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fps_nrf52840%2Fsaadc.html) is 40 us, and is suitable for a 800 kOhm source impedance. We will still measure VDD, so we can shift appropriately, but it won't need a long sample aquisition time. We can do some averaging in hardware by setting oversampling, to reduce random noise, but we will do that manually in software as part of the analysis. Here's the overlay:
 
 ```
