@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Changing PWM pulse lengths
@@ -6,7 +5,11 @@ tags: hardware, firmware
 categories: 
 ---
 
-So what caused the [glitch]({% link _posts/2024-01-30-glitch.md %}) we saw? One clue was that it only happened while the duty cycle was being lowered, not while it was increasing. So clearly something messed about how the pulse widths were being changed. If you think about centered pulses, opposite polarities, and trying to change the overall width to change the duty cycle, there's a problem. You have to change one first, then the other. It's not atomic (at least as I've implemented it). It doesn't take that long, but the possibility is that one changes before the other. That's okay, if the one that changes first effectively increases the dead time for a cycle. If you get the order wrong, the dead time is *decreased*, and if the width change is large enough, goes negative leading to shoot through. That's what I was seeing. The right thing to do is to choose which side to change first depending on which way the change is going. Here is working code:
+So what caused the [glitch]({% link _posts/2024-01-30-glitch.md %}) we saw? 
+
+<!--more-->
+
+One clue was that it only happened while the duty cycle was being lowered, not while it was increasing. So clearly something messed about how the pulse widths were being changed. If you think about centered pulses, opposite polarities, and trying to change the overall width to change the duty cycle, there's a problem. You have to change one first, then the other. It's not atomic (at least as I've implemented it). It doesn't take that long, but the possibility is that one changes before the other. That's okay, if the one that changes first effectively increases the dead time for a cycle. If you get the order wrong, the dead time is *decreased*, and if the width change is large enough, goes negative leading to shoot through. That's what I was seeing. The right thing to do is to choose which side to change first depending on which way the change is going. Here is working code:
 
 overlay:
 
