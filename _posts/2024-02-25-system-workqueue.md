@@ -44,9 +44,8 @@ The timer is stopped, so this condition remains. No amount of timer synchronizin
 
 One could try to clean items out of the workqueue during turnoff, cancel them or something. But if I understand [best practice](https://docs.zephyrproject.org/latest/kernel/services/threads/workqueue.html#workqueue-best-practices) correctly, we should just check in the handler whether to actually do the work:
 
-```
-A general best practice is to always maintain in shared state some condition that can be checked by the handler to confirm whether there is work to be done. This way you can use the work handler as the standard cleanup path: rather than having to deal with cancellation and cleanup at points where items are submitted, you may be able to have everything done in the work handler itself.
-```
+> A general best practice is to always maintain in shared state some condition that can be checked by the handler to confirm whether there is work to be done. This way you can use the work handler as the standard cleanup path: rather than having to deal with cancellation and cleanup at points where items are submitted, you may be able to have everything done in the work handler itself.
+
 
 For us, that means a shared variable mvstate.poweron, which we can check and return in state_handler. If it's only modified in handlers called in the system workqueue, it doesn't even need to be protected with a mutex or other synchronization primitive. You can see the actual code on [github](https://github.com/KalynaEnergy/mv).
 
