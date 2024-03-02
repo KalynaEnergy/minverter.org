@@ -13,6 +13,6 @@ In a [previous update]({% link _posts/2024-02-21-wireless-control.md %}), I show
 
 ![screenshot](/assets/2024-03-02/wireless-freq-screenshot.png)
 
-Under the readable characteristic, we see the value of the measured frequency, in millihertz. The input is a signal generator set to 42.0 Hz. The interface is not very pretty, it's a generic developer interface (Nordic's nRF Connect app for iOS), but it does show the system working. Code is [here](https://github.com/KalynaEnergy/mv/tree/v0.1.0).
+Under the readable characteristic, we see the value of the measured frequency, in millihertz. The input is a signal generator set to 42.0 Hz, so it seems to be working. The interface is not very pretty, it's a generic developer interface (Nordic's [nRF Connect app](https://www.nordicsemi.com/Products/Development-tools/nrf-connect-for-mobile), on iOS), but it can be used for measurement and control. Code is [here](https://github.com/KalynaEnergy/mv/tree/v0.1.0), conveniently tagged for today's version. With some level of wireless interface in place, a measurement system, and control of a power stage, we are almost in a position where the rest of the system is just a [Simple Matter of Programming](https://en.wikipedia.org/wiki/Small_matter_of_programming). Not quite, there are a few other granular chunks to demonstrate, but getting closer.
 
 
